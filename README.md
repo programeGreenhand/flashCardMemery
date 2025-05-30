@@ -7,3 +7,4 @@
 3.带有记忆激励系统
 4.可自己按各种格式导入要记忆的知识，非常丰富，甚至是图片
 代码详见master分支！！！！
+【Demo链接】https://68108b95873063d18693b9db--phenomenal-yeot-746ae4.netlify.app/

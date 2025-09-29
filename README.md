@@ -1,18 +1,18 @@
-超绝至臻闪卡记忆系统 - 技术文档 📚
-项目概述 🎯
-超绝至臻闪卡记忆系统是一个基于Vue 3 + Pinia + Vue Router构建的现代化闪卡学习应用。该系统采用科学的间隔重复算法(SM-2)，结合游戏化激励机制，为用户提供高效、有趣的学习体验。
+# 超绝至臻闪卡记忆系统 - 技术文档 📚
+## 项目概述 🎯
+### 超绝至臻闪卡记忆系统是一个基于Vue 3 + Pinia + Vue Router构建的现代化闪卡学习应用。该系统采用科学的间隔重复算法(SM-2)，结合游戏化激励机制，为用户提供高效、有趣的学习体验。
 
-技术架构 🏗️
-前端框架
-Vue 3 - 组合式API
+# 技术架构 🏗️
+## 前端框架
+### Vue 3 - 组合式API
 
-Pinia - 状态管理
+### Pinia - 状态管理
 
-Vue Router - 路由管理
+### Vue Router - 路由管理
 
-VueUse - 工具库
+### VueUse - 工具库
 
-核心特性 ✨
+# 核心特性 ✨
 🎮 游戏化学习体验
 
 📊 学习数据统计与分析
@@ -25,7 +25,7 @@ VueUse - 工具库
 
 💾 离线学习能力
 
-项目结构 📁
+# 项目结构 📁
 text
 src/
 ├── components/          # 通用组件
@@ -34,7 +34,8 @@ src/
 ├── router/             # 路由配置
 ├── composables/        # 组合式函数
 └── utils/              # 工具函数
-核心组件文档 🔧
+
+# 核心组件文档 🔧
 App.vue - 应用根组件
 功能特性
 🌗 暗黑模式切换
@@ -43,7 +44,7 @@ App.vue - 应用根组件
 
 📱 响应式布局
 
-关键代码
+# 关键代码
 vue
 <template>
   <div class="app-container" :class="{ 'dark-mode': isDarkMode }">
@@ -69,14 +70,15 @@ const toggleDarkMode = () => {
   localStorage.setItem('theme', isDarkMode.value ? 'dark' : 'light')
 }
 CardEditor.vue - 卡片编辑器
-功能特性
-✏️ 富文本编辑支持
 
-🏷️ 标签管理
+# 功能特性
+### ✏️ 富文本编辑支持
 
-🎚️ 难度级别设置
+### 🏷️ 标签管理
 
-🖼️ 媒体库支持
+### 🎚️ 难度级别设置
+
+### 🖼️ 媒体库支持
 
 编辑器工具栏
 vue
@@ -95,14 +97,15 @@ const difficultyLevels = [
   { value: 'hard', label: '困难', icon: '😰' }
 ]
 DeckDetail.vue - 卡片集详情
-功能特性
-📈 学习统计展示
 
-🔍 卡片搜索与筛选
+# 功能特性
+### 📈 学习统计展示
 
-📊 掌握进度可视化
+### 🔍 卡片搜索与筛选
 
-⚡ 快速学习入口
+### 📊 掌握进度可视化
+
+### ⚡ 快速学习入口
 
 统计信息展示
 vue
@@ -121,14 +124,15 @@ vue
   </div>
 </div>
 Study.vue - 学习界面
-功能特性
-🃏 闪卡翻转动画
 
-⭐ 6级评分系统
+# 功能特性
+### 🃏 闪卡翻转动画
 
-📈 实时进度跟踪
+### ⭐ 6级评分系统
 
-🎉 学习奖励机制
+### 📈 实时进度跟踪
+
+### 🎉 学习奖励机制
 
 评分系统
 javascript
@@ -245,7 +249,7 @@ export function useToast() {
   
   return { showToast, closeToast, toasts }
 }
-样式系统 🎨
+# 样式系统 🎨
 CSS变量主题系统
 css
 /* 基础样式 */
@@ -278,7 +282,7 @@ const studyStats = useStorage('flashcard-study-stats', {
   correctReviews: 0,
   sessionHistory: []
 })
-响应式设计 📱
+# 响应式设计 📱
 移动端适配
 css
 @media (max-width: 768px) {
@@ -297,7 +301,7 @@ css
     align-items: center;
   }
 }
-性能优化 ⚡
+# 性能优化 ⚡
 组件懒加载
 typescript
 {
@@ -319,7 +323,7 @@ echarts.use([
   TitleComponent, TooltipComponent, LegendComponent, GridComponent,
   CanvasRenderer
 ])
-游戏化机制 🎮
+# 游戏化机制 🎮
 经验值计算公式
 javascript
 // 等级计算
@@ -350,7 +354,7 @@ function updateStreak() {
   
   // 连续学习逻辑...
 }
-学习算法 🧠
+# 学习算法 🧠
 SM-2间隔重复算法
 javascript
 function calculateNextReview(progress, quality) {
@@ -358,7 +362,7 @@ function calculateNextReview(progress, quality) {
   // 根据回答质量计算下次复习间隔
   // 更新难度系数和重复次数
 }
-部署说明 🚀
+# 部署说明 🚀
 构建命令
 bash
 # 安装依赖
@@ -382,5 +386,5 @@ Safari 14+
 Edge 90+
 
 许可证 📄
-本项目仅作展示用途，采用纯前端实现。
+### 本项目仅作展示用途，采用纯前端实现。
 # 【Demo链接】https://68108b95873063d18693b9db--phenomenal-yeot-746ae4.netlify.app/
